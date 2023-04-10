@@ -1,0 +1,252 @@
+@media only screen and (max-width: 425px) {
+    /* body {
+        width: 424px;
+    } */
+
+    header {
+        width: 424px;
+    }
+
+    nav {
+        width: 424px;
+    }
+
+    nav.sticky {
+        padding: 10px 0;
+        background-color: #222;
+    }
+
+    /* body {
+    height: 100vh;
+} */
+
+    header {
+        height: 424px;
+        background-image: url(./image/header-bg.jpg);
+        background-size: 100% 100%;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    nav {
+        background-color: #222;
+        padding: 10px 0;
+    }
+
+    nav .logo {
+        font-size: 25px;
+        padding: 0;
+    }
+
+    .header-title h2 {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .header-title p {
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+
+    #agency a::selection {
+        background-color: unset;
+    }
+
+    /* SECTION1 */
+
+    #section1 {
+        padding: 150px 0;
+    }
+
+    .s1-title {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .s1-title h1 {
+        font-weight: bold;
+    }
+
+    #section1 h1::selection {
+        background-color: #fed136;
+    }
+
+    #section1 p::selection {
+        background-color: #fed136;
+    }
+
+    #section1 h4::selection {
+        background-color: #fed136;
+    }
+
+    .s1-title p {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 75px;
+        text-transform: none;
+        font-style: italic;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .services .box {
+        width: 424px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services .box i {
+        font-size: 50px;
+        border-radius: 50%;
+        padding: 30px;
+        width: 150px;
+    }
+
+    /* SECTION3 */
+
+    #section3 {
+        /* height: 100vh; */
+        padding: 150px 0;
+        background-color: #eee;
+    }
+
+    #section3 h1::selection {
+        background-color: #fec503;
+    }
+
+    #section3 p::selection {
+        background-color: #fec503;
+    }
+
+    .social i {
+        border-radius: 100%;
+    }
+
+    .social a {
+        margin-right: 10px;
+    }
+
+    .s3-box {
+        width: 20%;
+    }
+
+    .team-box {
+        /* width: 0%; */
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* SECTION4 */
+
+    .container img {
+        margin: 50px auto;
+    }
+
+    /* SECTION5 */
+
+    #section5 {
+        /* height: 100vh; */
+        padding: 150px 0;
+        background-image: url(./image/map-image.png);
+        background-color: #222;
+    }
+
+    .s5-boxs {
+        flex-direction: column;
+    }
+
+    .s5-boxs input:last-child {
+        margin-bottom: 15px;
+    }
+
+    .s5-box textarea {
+        width: 400px;
+    }
+
+    /* FOOTER */
+    .f-title {
+        flex-direction: column;
+    }
+
+    .f-title h5 {
+        margin-bottom: 20px;
+    }
+
+    .f-title .social {
+        margin-bottom: 20px;
+    }
+
+    .add img {
+        width: 424px;
+        margin: 0;
+    }
+
+
+    /* MODAL */
+
+    .class-modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        padding: 5rem 6rem;
+        box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+        z-index: 9999;
+        transition: all 0.5s;
+        overflow: scroll;
+    }
+
+
+    .class-modal img {
+        width: 720px;
+    }
+
+    .class-modal .prg a {
+        text-decoration: none;
+        color: white;
+        background-color: #fed136;
+        padding: 6px 12px;
+        border-radius: 3px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .class-modal .prg a span {
+        font-size: 30px;
+    }
+
+    .hidden {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .btn--close-modal {
+        font-family: inherit;
+        color: inherit;
+        position: absolute;
+        top: 0.1rem;
+        right: 2rem;
+        font-size: 4rem;
+        cursor: pointer;
+        border: none;
+        background: none;
+    }
+
+}

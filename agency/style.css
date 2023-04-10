@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    height: 757px;
+    background-image: url(./image/header-bg.jpg);
+    background-size: 100% 100%;
+}
+
+nav.sticky {
+    padding: 10px 0;
+    background-color: #222;
+}
+
+nav.sticky .logo {
+    font-size: 25px;
+}
+
+nav {
+    background: unset;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* position: fixed;  */
+    top: 10px;
+    /* left: 20px; */
+}
+
+
+
+nav h1 a {
+    font-family: "Kaushan Script", sans-serif;
+    color: #fed136;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+
+
+.active {
+    color: white;
+    background-color: #fed136;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.active:hover {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+nav ul li {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    /* padding: 15px; */
+    border-radius: 3px;
+}
+
+nav ul li a:hover {
+    color: #fed136;
+}
+
+nav li:not(:first-child) {
+    padding-left: 20px;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* text-align: center; */
+}
+
+
+.header-title h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+}
+
+.header-title p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 75px;
+    line-height: 75px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.header-title p::selection {
+    background-color: #fed136;
+}
+
+.header-title h2::selection {
+    background-color: #fed136;
+}
+
+.header-title a {
+    text-transform: uppercase;
+    background-color: #fed136;
+    border-color: #fed136;
+    font-weight: bold;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.header-title a:hover {
+    background-color: #fec503;
+}
+
+#agency a::selection {
+    background-color: unset;
+}
+
+/* SECTION1 */
+
+#section1 {
+    padding: 150px 0;
+}
+
+.s1-title {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.s1-title h1 {
+    font-weight: bold;
+}
+
+#section1 h1::selection {
+    background-color: #fed136;
+}
+
+#section1 p::selection {
+    background-color: #fed136;
+}
+
+#section1 h4::selection {
+    background-color: #fed136;
+}
+
+.s1-title p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 75px;
+    text-transform: none;
+    font-style: italic;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.services .box {
+    width: 28%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services .box i {
+    font-size: 50px;
+    border-radius: 50%;
+    padding: 30px;
+    width: 150px;
+}
+
+
+/* SECTION2 */
+
+#section2 {
+    background-color: #eee;
+    padding: 100px 0;
+}
+
+.s2-title p {
+    margin-bottom: 60px;
+}
+
+#section2 img::selection {
+    background-color: unset;
+}
+
+#section2 h1::selection {
+    background-color: #fec503;
+}
+
+#section2 p::selection {
+    background-color: #fec503;
+}
+
+.col-lg-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 400px; */
+    padding: 0;
+    /* background-color: white; */
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.image {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-color: white;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.text {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image i {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(254, 209, 54, .9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    opacity: 0;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.image i:hover {
+    opacity: 1;
+}
+
+.s2-box h5::selection {
+    background-color: #fec503;
+}
+
+.s2-box p::selection {
+    background-color: #fec503;
+}
+
+
+
+
+/* SECTION3 */
+
+#section3 {
+    /* height: 100vh; */
+    padding: 150px 0;
+    background-color: #eee;
+}
+
+#section3 h1::selection {
+    background-color: #fec503;
+}
+
+#section3 p::selection {
+    background-color: #fec503;
+}
+
+.social i {
+    border-radius: 100%;
+}
+
+.social a {
+    margin-right: 10px;
+}
+
+.s3-box {
+    width: 20%;
+}
+
+.team-box {
+    /* width: 0%; */
+    text-align: center;
+    display: flex;
+}
+
+.t-box img {
+    border-radius: 50%;
+}
+
+.t-box h5::selection {
+    background-color: #fec503;
+}
+
+.t-box p::selection {
+    background-color: #fec503;
+}
+
+.t-box img::selection {
+    background-color: unset;
+}
+
+.social a {
+    background-color: black;
+    padding: 12px 14px;
+    border-radius: 50%;
+}
+
+.social a:hover {
+    background-color: #fed503;
+}
+
+.social::selection {
+    background-color: #fec503;
+}
+
+.end-lrm p::selection {
+    background-color: #fec503;
+}
+
+/* SECTION4 */
+
+.s4-link img::selection {
+    background-color: unset;
+}
+
+.s4-link::selection {
+    background-color: unset;
+}
+
+/* SECTION5 */
+
+#section5 {
+    /* height: 100vh; */
+    padding: 150px 0;
+    background-image: url(./image/map-image.png);
+    background-color: #222;
+}
+
+#section5 p {
+    margin-bottom: 60px;
+}
+
+#section5 p {
+    font-size: 16px;
+}
+
+#section5 h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#section5 h1::selection {
+    background-color: #fec503;
+}
+
+#section5 p::selection {
+    background-color: #fec503;
+}
+
+#section5 a {
+    text-decoration: none;
+    color: white;
+    border-radius: 3px;
+    padding: 20px 40px;
+    background-color: #fed136;
+    border-color: #fed136;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#section5 a:hover {
+    background-color: #fec503;
+}
+
+#section5 .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+    /* height: 100vh; */
+    padding: 25px 0;
+}
+
+footer a {
+    color: #fec503;
+}
+
+.f-link::selection {
+    background-color: #fec503;
+}
+
+.f-link a {
+    text-decoration: none;
+}
+
+.f-link a::selection {
+    background-color: blue;
+}
+
+.f-link a:hover {
+    text-decoration: underline;
+}
+
+footer .add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+footer h5::selection {
+    background-color: #fec503;
+}
+
+footer img::selection {
+    background-color: unset;
+}
+
+/* MODAL */
+
+.class-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 5rem 6rem;
+    box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    transition: all 0.5s;
+    overflow: scroll;
+}
+
+
+.class-modal img {
+    width: 720px;
+}
+
+.class-modal .prg a {
+    text-decoration: none;
+    color: white;
+    background-color: #fed136;
+    padding: 6px 12px;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+
+.class-modal .prg a span {
+    font-size: 30px;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.btn--close-modal {
+    font-family: inherit;
+    color: inherit;
+    position: absolute;
+    top: 0.1rem;
+    right: 2rem;
+    font-size: 4rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
